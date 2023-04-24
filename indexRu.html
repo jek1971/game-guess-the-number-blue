@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="stylesRu.css">
+  <title>Игра - Угадай число от 1 до 100</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="canvas">
+      <div class="desc">
+        <div class="top">
+          <div class="top">
+            <button class="top_btn" id="new_btn">Новая игра</button>
+
+            <button class="top_btn" id="end_btn">Конец игры</button>
+          </div>
+        </div>
+
+        <h2 class="desc_title" id="Subtitle_main">Угадайте число <br> от 1 до 100
+        </h2>
+
+        <div class="desc_Subtitle" id="desc_Subtitle"> <span class="desc_Subtitle">В новой игре </span>
+        </div>
+
+      </div>
+
+      <div class="field">
+        <label for="field_input" class="field_label">Ваше число</label>
+        <input type="text" class="field_input" onKeyPress="numer()"
+          autofocus><!--autofocus= устанавливает фокус в поле формы  onfocus= -->
+        <button class="field_btn">Проверка</button>
+
+      </div>
+      <div class="result">
+
+        <div class="result_help">
+          <span class="result_help_label">Подсказка : </span>
+          <span class="result_help_out"></span>
+        </div>
+        <div class="result_count">
+          <span class="result_count_label">Количество попыток : </span>
+          <span class="result_count_out"></span>
+          <div class="result_chek"><span></span>
+            <span class="result_chek_label">Результат : </span><span class="result_chek_out"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="appRu.js"></script>
+
+
+</body>
+
+</html>
